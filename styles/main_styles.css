@@ -318,6 +318,10 @@ section
 	width: 37px;
 	height: 37px;
 }
+.cart a > div > svg
+{
+	max-width: 100%;
+}
 .header_phone
 {
 	margin-left: 29px;
