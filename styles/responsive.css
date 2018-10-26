@@ -21,13 +21,52 @@
 
 ******************************/
 
+@media only screen and (max-height: 920px)
+{
+	.home_slider_dots_container
+	{
+		display: none !important;
+	}
+}
+
+/************
+1780px
+************/
+
+@media only screen and (max-width: 1780px)
+{
+	.header_search_input
+	{
+		width: 310px;
+	}
+	.main_nav
+	{
+		margin-left: 100px;
+	}
+}
+
 /************
 1. 1600px
 ************/
 
 @media only screen and (max-width: 1600px)
 {
-	
+	.header_search_input
+	{
+		width: 210px;
+	}
+	.main_nav
+	{
+		margin-left: 70px;
+	}
+	.main_nav ul li:not(:last-of-type)
+	{
+		margin-right: 39px;
+	}
+	.header_search
+	{
+		margin-right: 47px;
+	}
 }
 
 /************
@@ -36,7 +75,48 @@
 
 @media only screen and (max-width: 1440px)
 {
-	
+	.main_nav
+	{
+		display: none;
+	}
+	.header_phone > div:first-child > div
+	{
+		width: 24px;
+		height: 24px;
+	}
+	.header_phone > div:last-child
+	{
+		font-size: 16px;
+	}
+	.cart a > div
+	{
+		width: 25px;
+		height: 25px;
+	}
+	.user a > div
+	{
+		width: 26px;
+		height: 26px;
+	}
+	.user a > div > div
+	{
+		width: 18px;
+		height: 18px;
+		font-size: 11px;
+		line-height: 18px;
+	}
+	.header_search
+	{
+		margin-right: 39px;
+	}
+	.hamburger
+	{
+		display: block;
+	}
+	.header_search_input
+	{
+		width: 300px;
+	}
 }
 
 /************
@@ -90,7 +170,26 @@
 
 @media only screen and (max-width: 991px)
 {
-	
+	.header_phone
+	{
+		display: none !important;
+	}
+	.header_search_input
+	{
+		width: 210px;
+	}
+	.home_item_side
+	{
+		margin-top: 127px;
+	}
+	.header_content
+	{
+		padding-right: 25px;
+	}
+	.cart
+	{
+		margin-right: 0;
+	}
 }
 
 /************
@@ -126,7 +225,14 @@
 
 @media only screen and (max-width: 767px)
 {
-	
+	.header_search
+	{
+		display: none;
+	}
+	.home_item_side
+	{
+		display: none;
+	}
 }
 
 /************
@@ -135,7 +241,66 @@
 
 @media only screen and (max-width: 575px)
 {
-	
+	.header_content
+	{
+		height: 59px;
+	}
+	.home
+	{
+		padding-top: 59px;
+	}
+	.logo a > div > div:first-child
+	{
+		width: 20px;
+		margin-top: -3px;
+	}
+	.logo a > div > div:last-child
+	{
+		font-size: 16px;
+		padding-left: 10px;
+	}
+	.hamburger
+	{
+		margin-top: 2px;
+	}
+	.hamburger i
+	{
+		font-size: 20px;
+	}
+	.home_slider_nav,
+	.home_slider_custom_dots
+	{
+		display: none !important;
+	}
+	.home_container
+	{
+		padding-top: 59px;
+	}
+	.home_title,
+	.home_subtitle
+	{
+		font-size: 28px;
+	}
+	.home_subtitle
+	{
+		margin-top: 3px;
+	}
+	.home_items
+	{
+		margin-top: 40px;
+	}
+	.home_item_large
+	{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.user a > div,
+	.cart a > div
+	{
+		width: 24px;
+		height: 24px;
+	}
 }
 
 /************
