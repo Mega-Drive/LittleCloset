@@ -143,25 +143,7 @@
 
 @media only screen and (max-width: 1199px)
 {
-	.boxes > .container
-	{
-		max-width: 960px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.boxes_container
-	{
-		height: auto;
-	}
-	.box
-	{
-		width: 100%;
-		height: 296px;
-	}
-	.box:not(:last-child)
-	{
-		margin-bottom: 39px;
-	}
+	
 }
 
 /************
@@ -208,26 +190,13 @@
 	{
 		margin-right: 0;
 	}
-	.boxes > .container
+	.cart_col
 	{
-		max-width: 720px;
+		margin-top: 40px;
 	}
-	.feature_col:not(:last-child)
+	#checkout_name
 	{
-		margin-bottom: 30px;
-	}
-	.feature_col:not(:nth-child(2)) .feature
-	{
-		margin-top: 0px;
-	}
-	.feature_col:nth-child(2) .feature
-	{
-		width: 100%;
-		left: auto;
-	}
-	.feature_col:nth-child(3) .feature_title
-	{
-		max-width: 100%;
+		margin-bottom: 20px;
 	}
 	.footer_col:not(:last-child)
 	{
@@ -300,14 +269,6 @@
 	{
 		display: block;
 	}
-	.home_item_side
-	{
-		display: none;
-	}
-	.boxes > .container
-	{
-		max-width: 540px;
-	}
 	.footer_bar_content
 	{
 		height: auto;
@@ -352,68 +313,17 @@
 	{
 		font-size: 20px;
 	}
-	.home_slider_nav,
-	.home_slider_custom_dots
+	.billing,
+	.cart_total
 	{
-		display: none !important;
-	}
-	.home_container
-	{
-		padding-top: 59px;
-	}
-	.home_title,
-	.home_subtitle
-	{
-		font-size: 28px;
-	}
-	.home_subtitle
-	{
-		margin-top: 3px;
-	}
-	.home_items
-	{
-		margin-top: 40px;
-	}
-	.home_item_large
-	{
-		max-width: 350px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.home_item_large .product_image
-	{
-		width: 170px;
-	    margin-left: auto;
-	    margin-right: auto;
-	    margin-bottom: 30px;
-	}
-	.product_tag
-	{
-		width: 87px;
-		height: 87px;
-		right: 47px;
-	}
-	.product_tag > div > div:first-of-type
-	{
-		font-size: 18px;
-	}
-	.product_tag > div > div:last-of-type
-	{
-		font-size: 24px;
-	}
-	.product_tag > div > div:last-of-type span
-	{
-		font-size: 15px;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 	.user a > div,
 	.cart a > div
 	{
 		width: 24px;
 		height: 24px;
-	}
-	.boxes > .container
-	{
-		max-width: 100%;
 	}
 	.footer_logo
 	{

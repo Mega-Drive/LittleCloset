@@ -143,24 +143,9 @@
 
 @media only screen and (max-width: 1199px)
 {
-	.boxes > .container
+	.products_bar_links ul li:not(:last-of-type)
 	{
-		max-width: 960px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.boxes_container
-	{
-		height: auto;
-	}
-	.box
-	{
-		width: 100%;
-		height: 296px;
-	}
-	.box:not(:last-child)
-	{
-		margin-bottom: 39px;
+		margin-right: 35px;
 	}
 }
 
@@ -208,26 +193,44 @@
 	{
 		margin-right: 0;
 	}
-	.boxes > .container
+	.cart_bar
 	{
-		max-width: 720px;
+		display: none;
 	}
-	.feature_col:not(:last-child)
+	.cart_item
 	{
-		margin-bottom: 30px;
+		height: auto;
 	}
-	.feature_col:not(:nth-child(2)) .feature
+	.cart_item > div:not(:first-child)
 	{
-		margin-top: 0px;
+		width: auto;
 	}
-	.feature_col:nth-child(2) .feature
+	.product_text > span
 	{
-		width: 100%;
-		left: auto;
+		display: inline-block;
+		margin-right: 10px;
 	}
-	.feature_col:nth-child(3) .feature_title
+	.product_number
 	{
-		max-width: 100%;
+		width: auto;
+		padding-left: 0;
+	}
+	.product_image
+	{
+		margin-top: 10px;
+	}
+	.product_name_container
+	{
+		padding-left: 0;
+		margin-top: 15px;
+	}
+	.cart_item > div:not(:first-child)
+	{
+		margin-top: 15px;
+	}
+	.cart_extra_col
+	{
+		margin-top: 60px;
 	}
 	.footer_col:not(:last-child)
 	{
@@ -300,14 +303,6 @@
 	{
 		display: block;
 	}
-	.home_item_side
-	{
-		display: none;
-	}
-	.boxes > .container
-	{
-		max-width: 540px;
-	}
 	.footer_bar_content
 	{
 		height: auto;
@@ -352,68 +347,24 @@
 	{
 		font-size: 20px;
 	}
-	.home_slider_nav,
-	.home_slider_custom_dots
+	.button
 	{
-		display: none !important;
+		height: 35px;
 	}
-	.home_container
+	.button a
 	{
-		padding-top: 59px;
+		font-size: 14px;
+		line-height: 35px;
 	}
-	.home_title,
-	.home_subtitle
+	.button:not(:last-child)
 	{
-		font-size: 28px;
-	}
-	.home_subtitle
-	{
-		margin-top: 3px;
-	}
-	.home_items
-	{
-		margin-top: 40px;
-	}
-	.home_item_large
-	{
-		max-width: 350px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.home_item_large .product_image
-	{
-		width: 170px;
-	    margin-left: auto;
-	    margin-right: auto;
-	    margin-bottom: 30px;
-	}
-	.product_tag
-	{
-		width: 87px;
-		height: 87px;
-		right: 47px;
-	}
-	.product_tag > div > div:first-of-type
-	{
-		font-size: 18px;
-	}
-	.product_tag > div > div:last-of-type
-	{
-		font-size: 24px;
-	}
-	.product_tag > div > div:last-of-type span
-	{
-		font-size: 15px;
+		margin-right: 15px;
 	}
 	.user a > div,
 	.cart a > div
 	{
 		width: 24px;
 		height: 24px;
-	}
-	.boxes > .container
-	{
-		max-width: 100%;
 	}
 	.footer_logo
 	{

@@ -7,8 +7,8 @@
 1. Vars and Inits
 2. Set Header
 3. Init Menu
-4. Init Home Slider
-5. Init SVG
+4. Init SVG
+5. InitQty
 
 
 ******************************/
@@ -26,8 +26,8 @@ $(document).ready(function()
 	var header = $('.header');
 
 	initMenu();
-	initHomeSlider();
 	initSvg();
+	initQty();
 
 	setHeader();
 
@@ -111,78 +111,7 @@ $(document).ready(function()
 
 	/* 
 
-	4. Init Home Slider
-
-	*/
-
-	function initHomeSlider()
-	{
-		if($('.home_slider').length)
-		{
-			var homeSlider = $('.home_slider');
-			homeSlider.owlCarousel(
-			{
-				items:1,
-				autoplay:false,
-				loop:true,
-				mouseDrag:true,
-				smartSpeed:1200,
-				nav:false,
-				dots:false,
-				responsive:
-				{
-					0:
-					{
-						mouseDrag:true
-					},
-					558:
-					{
-						mouseDrag:false
-					}
-				}
-			});
-
-			if($('.home_slider_nav_prev').length)
-			{
-				var prev = $('.home_slider_nav_prev');
-				prev.on('click', function()
-				{
-					homeSlider.trigger('prev.owl.carousel');
-				});
-			}
-
-			if($('.home_slider_nav_next').length)
-			{
-				var next = $('.home_slider_nav_next');
-				next.on('click', function()
-				{
-					homeSlider.trigger('next.owl.carousel');
-				});
-			}
-
-			/* Custom dots events */
-			if($('.home_slider_custom_dot').length)
-			{
-				$('.home_slider_custom_dot').on('click', function()
-				{
-					$('.home_slider_custom_dot').removeClass('active');
-					$(this).addClass('active');
-					homeSlider.trigger('to.owl.carousel', [$(this).index(), 1200]);
-				});
-			}
-
-			/* Change active class for dots when slide changes by nav or touch */
-			homeSlider.on('changed.owl.carousel', function(event)
-			{
-				$('.home_slider_custom_dot').removeClass('active');
-				$('.home_slider_custom_dots li').eq(event.page.index).addClass('active');
-			});
-		}
-	}
-
-	/* 
-
-	5. Init SVG
+	4. Init SVG
 
 	*/
 
@@ -219,6 +148,47 @@ $(document).ready(function()
 				}, 'xml');
 			});
 		}	
+	}
+
+	/* 
+
+	5. Init Qty
+
+	*/
+
+	function initQty()
+	{
+		if($('.product_quantity').length)
+		{
+			var qtys = $('.product_quantity');
+
+			qtys.each(function()
+			{
+				var qty = $(this);
+				var sub = qty.find('.qty_sub');
+				var add = qty.find('.qty_add');
+				var num = qty.find('.product_num');
+				var original;
+				var newValue;
+
+				sub.on('click', function()
+				{
+					original = parseFloat(qty.find('.product_num').text());
+					if(original > 0)
+						{
+							newValue = original - 1;
+						}
+					num.text(newValue);
+				});
+
+				add.on('click', function()
+				{
+					original = parseFloat(qty.find('.product_num').text());
+					newValue = original + 1;
+					num.text(newValue);
+				});
+			});
+		}
 	}
 
 });
